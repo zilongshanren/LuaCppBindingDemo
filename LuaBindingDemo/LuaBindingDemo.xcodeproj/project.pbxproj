@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2955707D1E189FFC00E1056C /* lesson2.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2955707C1E189F4500E1056C /* lesson2.lua */; };
 		29894E071DB266C200131A99 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29894E061DB266C200131A99 /* liblua.a */; };
 		29894E0B1DB267F600131A99 /* lesson1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29894E0A1DB267F600131A99 /* lesson1.cpp */; };
 		29894E0C1DB2682000131A99 /* hello.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 29894E091DB267DE00131A99 /* hello.lua */; };
+		29894E101DB26B4A00131A99 /* lesson2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29894E0E1DB26B4A00131A99 /* lesson2.cpp */; };
+		29E31C5D1DBBAEDF00E6190B /* lesson2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29894E0E1DB26B4A00131A99 /* lesson2.cpp */; };
+		29E31C601DBBAEDF00E6190B /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29894E061DB266C200131A99 /* liblua.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,13 +27,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29E31C611DBBAEDF00E6190B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2955707D1E189FFC00E1056C /* lesson2.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2955707C1E189F4500E1056C /* lesson2.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lesson2.lua; path = lesson2/lesson2.lua; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		29894DFB1DB261C200131A99 /* Lesson1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson1; sourceTree = BUILT_PRODUCTS_DIR; };
 		29894E061DB266C200131A99 /* liblua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblua.a; path = "../lua-5.3.3/src/liblua.a"; sourceTree = "<group>"; };
 		29894E091DB267DE00131A99 /* hello.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hello.lua; path = lesson1/hello.lua; sourceTree = "<group>"; };
 		29894E0A1DB267F600131A99 /* lesson1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lesson1.cpp; path = lesson1/lesson1.cpp; sourceTree = "<group>"; };
+		29894E0E1DB26B4A00131A99 /* lesson2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lesson2.cpp; path = lesson2/lesson2.cpp; sourceTree = "<group>"; };
+		29E31C661DBBAEDF00E6190B /* Lesson2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				29894E071DB266C200131A99 /* liblua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29E31C5F1DBBAEDF00E6190B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E31C601DBBAEDF00E6190B /* liblua.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				29894DFB1DB261C200131A99 /* Lesson1 */,
+				29E31C661DBBAEDF00E6190B /* Lesson2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +89,7 @@
 		29894DFD1DB261C200131A99 /* LuaBindingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				29894E0D1DB26AEA00131A99 /* Lesson2 */,
 				29894E061DB266C200131A99 /* liblua.a */,
 				29894E081DB267A000131A99 /* Lesson1 */,
 			);
@@ -76,6 +103,15 @@
 				29894E091DB267DE00131A99 /* hello.lua */,
 			);
 			name = Lesson1;
+			sourceTree = "<group>";
+		};
+		29894E0D1DB26AEA00131A99 /* Lesson2 */ = {
+			isa = PBXGroup;
+			children = (
+				29894E0E1DB26B4A00131A99 /* lesson2.cpp */,
+				2955707C1E189F4500E1056C /* lesson2.lua */,
+			);
+			name = Lesson2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +132,23 @@
 			name = Lesson1;
 			productName = LuaBindingDemo;
 			productReference = 29894DFB1DB261C200131A99 /* Lesson1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		29E31C5B1DBBAEDF00E6190B /* Lesson2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29E31C631DBBAEDF00E6190B /* Build configuration list for PBXNativeTarget "Lesson2" */;
+			buildPhases = (
+				29E31C5C1DBBAEDF00E6190B /* Sources */,
+				29E31C5F1DBBAEDF00E6190B /* Frameworks */,
+				29E31C611DBBAEDF00E6190B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lesson2;
+			productName = LuaBindingDemo;
+			productReference = 29E31C661DBBAEDF00E6190B /* Lesson2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				29894DFA1DB261C200131A99 /* Lesson1 */,
+				29E31C5B1DBBAEDF00E6190B /* Lesson2 */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29894E101DB26B4A00131A99 /* lesson2.cpp in Sources */,
 				29894E0B1DB267F600131A99 /* lesson1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29E31C5C1DBBAEDF00E6190B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E31C5D1DBBAEDF00E6190B /* lesson2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +309,30 @@
 			};
 			name = Release;
 		};
+		29E31C641DBBAEDF00E6190B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/lua-5.3.3/src",
+					"$(PROJECT_DIR)/lua-5.3.3/src",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/lua-5.3.3/src";
+			};
+			name = Debug;
+		};
+		29E31C651DBBAEDF00E6190B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/lua-5.3.3/src",
+					"$(PROJECT_DIR)/lua-5.3.3/src",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/lua-5.3.3/src";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -265,6 +352,16 @@
 				29894E041DB261C200131A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29E31C631DBBAEDF00E6190B /* Build configuration list for PBXNativeTarget "Lesson2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E31C641DBBAEDF00E6190B /* Debug */,
+				29E31C651DBBAEDF00E6190B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
